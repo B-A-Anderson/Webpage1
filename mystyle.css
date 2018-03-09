@@ -1,0 +1,202 @@
+h1.title {
+    text-transform: capitalize;
+    font-family: Courier New, Courier, monospace;
+    font-weight: Bold;
+    font-size: 123px;
+    Color: rgb(255, 255, 255);
+    mix-blend-mode: overlay;
+    text-shadow: 
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    5px 2px 0 #000;
+    position: absolute;
+    left: 140px;
+    top: -65px;   
+}
+ li{
+     color: Gray;
+     font-family: cursive;
+     font-family: 'Times New Roman', Times, serif;
+  }
+
+
+ span{
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.2);
+ }
+
+ span.light {
+    background: rgba(252, 252, 252, 0); /* fallback color */
+    background: rgba(255, 255, 255, 0.7);
+ }
+
+ ul.flat {
+    position: absolute;
+    bottom: -10px;
+    right: 30px;
+    display: table;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    
+ }
+
+ .head{
+     background-color: aqua;
+    /*background-image: url("http://pre05.deviantart.net/7d94/th/pre/f/2008/196/8/4/gundam_banner_by_mnb01.jpg");*/
+ }
+
+ body {
+     background-image: url("http://4.bp.blogspot.com/-jaIqq_IGHks/TdD9gxv07vI/AAAAAAAAADM/3x3Wrx3otlM/s1600/Gundam_Seed_Destiny___11_by_neofireatlarge-1.jpg");
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: 1500px 970px;
+     background-position: center;
+     background-color: black;
+}
+
+body.favspage {
+    background-color: blue;
+}
+
+.banner {
+    box-sizing: border-box;
+    background-image: url("http://pre05.deviantart.net/7d94/th/pre/f/2008/196/8/4/gundam_banner_by_mnb01.jpg");
+    border-top-color: white;
+    border-top-style: solid;
+    border-top-width: 5px;
+    box-shadow: 12px;
+    min-width: auto;
+    height: 200px;
+    position: relative;
+    width: 103%;
+    top: -10px;
+    left: -10px;
+    padding-left: 10px;
+}
+
+ p.bold {
+     color: brown;
+     font-family: Arial, Helvetica, sans-serif;
+     font-style: italic;
+     font-family: bold;
+     font-size: small;
+ }
+
+ .beginDate {
+     font-family: cooperblack;
+     color: wheat; 
+     left: 10;
+     top: -15px;   
+     position: absolute; 
+ }
+
+ .button{
+     box-shadow: 4px 4px;
+     border-radius: 25%;
+     padding: 12px 28px;
+     font-size: 16px;
+     display: table-cell;
+     color:black;
+     -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-align: center;
+ }
+
+ .button1:hover {
+     background-blend-mode: overlay;
+     color:white;
+ }
+
+  .bold {
+    font-family: Bold;
+    font-weight: 600;
+    color: goldenrod;
+}
+
+  .favs {
+    max-width: 1600px;
+    margin: 40px auto 0 auto;
+}
+
+  .fav-container {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    flex-basis: 30%;
+  }
+  @media (min-width: 900px) {
+    .favs {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+
+  .fav-container:nth-child(1) {background-color:  rgba(245, 245, 220, 0.795)}
+  .fav-container:nth-child(2) {background-color:  rgba(245, 245, 220, 0.75)}
+  .fav-container:nth-child(3) {background-color:  rgba(245, 245, 220, 0.75)}
+  .fav-container:nth-child(4) {background-color:  rgba(245, 245, 220, 0.75)}
+  .fav-container:nth-child(5) {background-color:  rgba(245, 245, 220, 0.75)}
+ 
+  .fav-photo{
+    width: 60%;
+    float: left;
+    padding-right: 5px;   
+  }
+
+  .fav-name {
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+  }
+  .fav-header {
+    background-color:  rgba(245, 245, 220, 0.75);
+    text-align: center;
+  }
+
+  .fav-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+  }
+
+ .fav-reason{
+    color: blue;
+  }
+
+  .head {
+      height:10%;
+  }
+  .main {
+    float: left;
+    
+   
+  }
+  .fixer {
+    float: left;
+    position: relative;
+    left: -50%;
+  }
+
+.statement {
+    font-size: 22px;
+    font-weight: 200;
+    text-align: center;
+    clear: left;
+}
+
+.tab{
+    font-family: bold;
+    display: inline-block;
+    text-align: left;
+    text-transform: uppercase;
+}
+.prof {
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+
+}

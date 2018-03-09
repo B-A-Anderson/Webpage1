@@ -1,0 +1,37 @@
+  [
+      {
+        "Name": "Monster Hunter",
+        "Type": "Video Game",
+        "Color": "darkred",
+        "Fav": ["The monsters","Using a GreatSword","All the interesting Mechanics"],
+        "photo": "http://images2.wikia.nocookie.net/__cb20110318210660/monsterhunter/images/2/2e/Akantor_Artwork_2.jpg"
+      },
+      { 
+        "Name": "Pokemon",
+        "Type": "Video Game",
+        "Color": "green",
+        "Fav": ["Tyranitar","Been playing it for too long","New Pokemon Designs (Yes I am the minority)"],
+        "photo": "https://i.ytimg.com/vi/8H9eD1UPxeY/maxresdefault.jpg"
+      },
+      {  
+        "Name": "Traveling",
+        "Type": "Outdoors",
+        "Color": "lightblue",
+        "Fav": ["Beautiful Scenery","Going new places","Experimenting with new food!"],
+        "photo":"http://epic-travel.com/wp-content/uploads/2013/09/Spice-Hotel-SPA-Epic-Travel-2.jpg"
+      },
+      {  
+        "Name": "Bass Guitar",
+        "Type": "Anywhere",
+        "Color": "black",
+        "Fav": "I just really enjoy to play!",
+        "photo":"http://images.esellerpro.com/2906/I/28/ibanez-aeb8e-bk-electro-acoustic-guitar.jpg"
+      },
+      {  
+        "Name": "Gundam",
+        "Type": "Entertainment?",
+        "Color": "Darkblue",
+        "Fav": ["Giant Robots","BUUUUURNING!! FIIINGAAAAAH!!!","Some of the characters and stories are actually really good","Did I forget to say Giant robots?"],
+        "photo":"http://wallpoper.com/images/00/42/03/57/gundam-sazabi_00420357.jpg"
+      }
+    ]   

@@ -1,0 +1,23 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>The Things I Like</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <link href = "mystyle.css" type="text/css" rel="stylesheet"> 
+    </head>
+    <body id="bod" ng-app="myApp" ng-controller='myCtrl' ng-style="obj">
+            <div id="likes">
+        <script src="likes.js"></script>
+        <script src="likepage.js"></script> 
+    </div>       
+  <ul>
+
+        <li ng-repeat="todo in todos">
+    
+          {{listoflikes.Name}} - <em>{{listoflikes.Color}}</em>
+    
+        </li>
+    
+      </ul>
+    </body>
+</html>
