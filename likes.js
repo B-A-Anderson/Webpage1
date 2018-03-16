@@ -45,7 +45,7 @@ listoflikes = {
      return `
         <div class="fav-container"><span>
             <h1 class="fav-name">${dat.Name}</h1>
-            <img class="fav-photo" src="${dat.photo}" onclick="changeBackground(this)">
+            <img class="fav-photo" src="${dat.photo}" onclick="changePage(this)">
         </span></div>`;
   }//end template
 
@@ -56,14 +56,29 @@ document.getElementById("likes").innerHTML =`
   ${listoflikes.Favs.map(template).join('')}
   </div>`;
   
-  function changeBackground(img) 
+  function changePage(img) 
   {
-    document.getElementById("bod").style.backgroundImage = 'url(' + img.src + ')';
-    document.getElementById("bod").style.backgroundColor = 'url(' + dat.Color + ')';
+     //Get object data using Image
+    listoflikes.Favs.forEach(function(index){
+      if(index.photo === img.src)
+      {
+    document.getElementById("bod").style.backgroundImage = 'url(' + img.src + ')'; // Change Bakground image
+    document.getElementById("bod").style.backgroundColor =  index.Color;
     document.getElementById("likes").innerHTML =`
-    <h2 class=fav-header>${dat.Name}<header>
+    <h2 class=fav-header>${index.Name}<header>
 
 
     </div>`;
+      }
+    });
   };
 
+  /*function setObject(image){
+    for(let i = 0; i <= listoflikes.Favs.length; i++){
+      if(listoflikes.Favs[i].photo === image)
+    {
+      
+      return listoflikes.Favs[i];
+    }
+  } 
+};*/
