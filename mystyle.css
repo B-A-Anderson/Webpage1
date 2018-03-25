@@ -114,58 +114,6 @@ body.favspage {
     font-family: Bold;
     font-weight: 600;
     color: goldenrod;
-}
-
-  .favs {
-    max-width: 1600px;
-    margin: 40px auto 0 auto;
-}
-
-  .fav-container {
-    padding: 20px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    flex-basis: 30%;
-  }
-  @media (min-width: 900px) {
-    .favs {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-  }
-
-  .fav-container:nth-child(1) {background-color:  rgba(245, 245, 220, 0.795)}
-  .fav-container:nth-child(2) {background-color:  rgba(245, 245, 220, 0.75)}
-  .fav-container:nth-child(3) {background-color:  rgba(245, 245, 220, 0.75)}
-  .fav-container:nth-child(4) {background-color:  rgba(245, 245, 220, 0.75)}
-  .fav-container:nth-child(5) {background-color:  rgba(245, 245, 220, 0.75)}
- 
-  .fav-photo{
-    width: 60%;
-    float: left;
-    padding-right: 5px;   
-  }
-
-  .fav-name {
-      font-family: Arial, Helvetica, sans-serif;
-      text-align: center;
-  }
-  .fav-header {
-    background-color:  rgba(245, 245, 220, 0.75);
-    text-align: center;
-  }
-
-  .fav-list{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    position: relative;
-  }
-
- .fav-reason{
-    color: blue;
   }
 
   .head {
@@ -173,9 +121,9 @@ body.favspage {
   }
   .main {
     float: left;
-    
-   
   }
+
+
   .fixer {
     float: left;
     position: relative;
@@ -189,14 +137,79 @@ body.favspage {
     clear: left;
 }
 
+
 .tab{
     font-family: bold;
     display: inline-block;
     text-align: left;
     text-transform: uppercase;
 }
+
 .prof {
     font-family: Arial, Helvetica, sans-serif;
     color: grey;
 
+}
+
+
+
+/* FAVSPAGE SPECIFIC */
+#bod {
+    -webkit-transition: background-image .6s ease-in-out;
+	-moz-transition: background-image .6s ease-in-out;
+	-o-transition: background-image .6s ease-in-out;
+	-ms-transition: background-image .6s ease-in-out;
+    transition: background-image .6s ease-in-out;
+}
+
+.favs {
+  max-width: 1600px;
+  margin: 40px auto 0 auto;
+}
+
+.fav-container {
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 30%;
+}
+@media (min-width: 900px) {
+  .favs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.fav-container:nth-child(1) {background-color:  rgba(245, 245, 220, 0.795)}
+.fav-container:nth-child(2) {background-color:  rgba(245, 245, 220, 0.75)}
+.fav-container:nth-child(3) {background-color:  rgba(245, 245, 220, 0.75)}
+.fav-container:nth-child(4) {background-color:  rgba(245, 245, 220, 0.75)}
+.fav-container:nth-child(5) {background-color:  rgba(245, 245, 220, 0.75)}
+
+.fav-photo{
+  width: 60%;
+  float: left;
+  padding-right: 5px;   
+}
+
+.fav-name {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.fav-header {
+  background-color:  rgba(245, 245, 220, 0.75);
+  text-align: center;
+}
+
+.fav-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+.fav-reason{
+  color: blue;
 }

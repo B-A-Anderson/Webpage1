@@ -51,7 +51,6 @@ listoflikes = {
 
 
 document.getElementById("likes").innerHTML =`
-<h2 class=fav-header>Here are ${listoflikes.Favs.length} of my Favorite things: </h2>
 <div class="favs">
   ${listoflikes.Favs.map(template).join('')}
   </div>`;
@@ -62,23 +61,13 @@ document.getElementById("likes").innerHTML =`
     listoflikes.Favs.forEach(function(index){
       if(index.photo === img.src)
       {
-    document.getElementById("bod").style.backgroundImage = 'url(' + img.src + ')'; // Change Bakground image
-    document.getElementById("bod").style.backgroundColor =  index.Color;
+    var body = document.getElementById("bod");
+    body.style.backgroundImage = 'url(' + img.src + ')'; // Change Bakground image
+    body.style.backgroundColor =  index.Color;
     document.getElementById("likes").innerHTML =`
     <h2 class=fav-header>${index.Name}<header>
-
 
     </div>`;
       }
     });
   };
-
-  /*function setObject(image){
-    for(let i = 0; i <= listoflikes.Favs.length; i++){
-      if(listoflikes.Favs[i].photo === image)
-    {
-      
-      return listoflikes.Favs[i];
-    }
-  } 
-};*/
