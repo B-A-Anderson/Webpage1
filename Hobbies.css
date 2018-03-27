@@ -4,10 +4,34 @@ body {
     background-attachment: fixed;
     background-size: 1500px 970px;
     background-position: center;
-    background-color: rgb(37, 0, 107);
+    background-color: rgb(23, 1, 63);
 }
+
+textarea {
+    overflow-y: scroll;
+    height: 500px;
+    background-color: darkblue;
+    
+}
+
+h1.title {
+    color: whitesmoke;
+    font-size: 123px;
+    text-align: center;
+    background-color: rgba(23, 1, 63, 0.625);
+    max-width: 600px;
+    margin-left: 500px;
+    margin-top: 20px;
+}
+
 .main {
-    margin-left: 200px; /* Same as the width of the sidenav */
+    text-align: center;
+    background-color: rgba(23, 1, 63, 0.425);
+    padding-left: 40px;
+    max-width: 75%;
+    margin-left: 10%;
+    padding-top: 10px;
+    
   }
 
 /* naviagtion menu */
@@ -18,7 +42,7 @@ body {
     z-index: 1;
     top: 0;
     right: 0; /* Place on right side*/
-    background-color: rgb(37, 0, 107);
+    background-color: rgb(23, 1, 63);
     overflow-x: hidden;
     padding-top: 20px;
 }

@@ -158,7 +158,6 @@ body.favspage {
     -webkit-transition: background-image .6s ease-in-out;
 	-moz-transition: background-image .6s ease-in-out;
 	-o-transition: background-image .6s ease-in-out;
-	-ms-transition: background-image .6s ease-in-out;
     transition: background-image .6s ease-in-out;
 }
 
@@ -198,9 +197,11 @@ body.favspage {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
-.fav-header {
-  background-color:  rgba(245, 245, 220, 0.75);
-  text-align: center;
+#fav-header {
+    font-family: serif;
+    text-align: center;
+    font-size: 123px;
+    color: cornsilk; 
 }
 
 .fav-list{

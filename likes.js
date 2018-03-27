@@ -65,8 +65,10 @@ document.getElementById("likes").innerHTML =`
     body.style.backgroundImage = 'url(' + img.src + ')'; // Change Bakground image
     body.style.backgroundColor =  index.Color;
     document.getElementById("likes").innerHTML =`
-    <h2 class=fav-header>${index.Name}<header>
-
+    <div class=diff>
+    <h1 ID=fav-header>${index.Name}<header>
+    </div>
+     
     </div>`;
       }
     });
