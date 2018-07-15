@@ -1,0 +1,57 @@
+strong{
+    font-size: 30px;
+    color: dodgerblue;
+}
+
+#svg{
+    z-index: -1;
+    position: absolute;
+    left: 350px;
+}
+
+#flat {
+    position: relative;
+    bottom: -15px;
+    right: 30px;
+    display: table;
+    width: 100%;
+    list-style: none;
+    text-align: center;  
+    z-index: 1; 
+    padding: -20px;
+ }
+
+#reset{
+    box-shadow: 4px 4px 2px 2px;
+    color: greenyellow;
+    font-size: 20px;
+}
+
+ .tic{
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 30px;
+    margin-top: 15px;
+ }
+
+.button{ 
+    padding: 30px 30px;
+    height: 60px;
+    width: 60px;
+    display: table-cell;
+   cursor: pointer;
+   text-align: center;
+}
+
+
+
+h1.heading{
+    text-transform: capitalize;
+    font-size: 73px;
+    background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    position: relative;
+    text-align: center;
+}

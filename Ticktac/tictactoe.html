@@ -1,0 +1,138 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Tic Tac Toe Game</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+    </head>
+    <body>
+            <script src="playgame.js"></script>
+        <header>
+                <h1 class="heading">Tic Tac To Game!</h1>
+        </header>
+        <div id="superDiv"><center>
+            <p class="Expo">Click on the spaces in between the Lines to play. The first click is <strong>X</strong> and the second is <strong>O</strong>. First to three in a row wins!</p>
+            <p id="reset" class="button" onclick="reset()">RESTART</p>
+                <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499 505" width="500" height="500" preserveAspectRatio="xMidYMid meet">
+                <g id="main">
+                        <!--Horizontal-->
+                        <path d="M23,179 C18,179 455,181 491,180"  stroke="black" stroke-width="10" fill="transparent" stroke-linecap="round"/>
+                        <path d="M23,340 C57,338 484,334 491,335" stroke="black" stroke-width="10" fill="transparent" stroke-linecap="round"/>
+                        <!--Vertical-->
+                        <path d="M160,54 C161,53 155,463 151,485" stroke="black" stroke-width="10" fill="transparent" stroke-linecap="round"/>
+                        <path d="M352,61 C354,61 347,462 343,485" stroke="black" stroke-width="10" fill="transparent" stroke-linecap="round"/>
+                        
+                </g>
+            </svg>  
+
+                    <ul class= "flat">
+                            <li  class="tic"><p id="btn-1" class="button" onclick="addShape('btn-1')"></li>
+                            <li  class="tic"><p id="btn-2" class="button" onclick="addShape('btn-2')"></li>
+                            <li  class="tic"><p id="btn-3" class="button" onclick="addShape('btn-3')"></li>
+                    </ul>
+                    <ul class= "flat">
+                            <li class="tic"><p id="btn-4" class="button" onclick="addShape('btn-4')"></li>
+                            <li class="tic"><p id="btn-5" class="button" onclick="addShape('btn-5')"></li>
+                            <li class="tic"><p id="btn-6" class="button" onclick="addShape('btn-6')"></li>
+                    </ul>
+                    <ul class= "flat">
+                            <li class="tic"><p id="btn-7" class="button" onclick="addShape('btn-7')"></li>
+                            <li class="tic"><p id="btn-8" class="button" onclick="addShape('btn-8')"></li>
+                            <li class="tic"><p id="btn-9" class="button" onclick="addShape('btn-9')"></li>
+                    </ul></center>        
+        </div>
+            <script>
+                var sDiv = document.getElementById('superDiv');
+                var content = sDiv.innerHTML;
+                var count = 0;
+                var button1, button2, button3, button4, button5, button6, button7, button8, button9;
+                var buttons = [button1, button2, button3, button4, button5, button6, button7, button8, button9];
+                function addShape(btn){       
+                    var button = document.getElementById(btn);
+                    button.style.fontSize = '50px';
+                    if(count % 2 == 0){ 
+                        button.innerText = 'X';
+                    }else if(count % 2 != 0){
+                        button.innerText = 'O';
+                    }//end if
+                    button.onclick = false;
+                    checkWinner(btn);
+                    count++;
+                }//end addShape
+
+                function checkWinner(btn){     
+                    switch (btn){
+                        case 'btn-1':
+                        button1 = document.getElementById(btn).innerText;
+                        break;
+                        case 'btn-2':
+                        button2 = document.getElementById(btn).innerText;
+                        break;
+                        case 'btn-3':
+                        button3 = document.getElementById(btn).innerText;
+                        break;
+                        case 'btn-4':
+                        button4 = document.getElementById(btn).innerText;
+                        break;
+                        case 'btn-5':
+                        button5 = document.getElementById(btn).innerText;
+                        break;
+                        case 'btn-6':
+                        button6 = document.getElementById(btn).innerText;
+                        break;
+                        case 'btn-7':
+                        button7 = document.getElementById(btn).innerText;
+                        break;
+                        case 'btn-8':
+                        button8 = document.getElementById(btn).innerText;
+                        break;
+                        case 'btn-9':
+                        button9 = document.getElementById(btn).innerText;
+                        break;
+                    }
+
+                    if( areEqual(button1, button2, button3)){
+                    alert( button1 + " Wins!!")
+                    }else if( areEqual(button4, button5, button6)){
+                    alert( button4 + " Wins!!")
+                    }else if( areEqual(button7, button8, button9)){
+                    alert( button7 + " Wins!!")
+                    }else if( areEqual(button1, button4, button7)){
+                    alert( button1 + " Wins!!")
+                    }else if( areEqual(button2, button5, button8)){
+                    alert( button2 + " Wins!!")
+                    }else if( areEqual(button3, button6, button9)){
+                    alert( button3 + " Wins!!")
+                    }else if( areEqual(button1, button5, button9)){
+                    alert( button9 + " Wins!!")
+                    }else if( areEqual(button7, button5, button3)){
+                    alert( button3 + " Wins!!")
+                    }//end if
+                    
+                }
+
+                function areEqual(arg1, arg2, arg3){
+                    if(arg1 == null || arg2 == null || arg3 == null)
+                    return false;
+                    else if(arg1 == arg2 && arg2 == arg3)
+                    return true;
+                }//end areEqual
+
+                function reset(){
+                    sDiv.innerHTML= content; 
+                    button1 = null;
+                    button2 = null;
+                    button3 = null;
+                    button4 = null;
+                    button5 = null;
+                    button6 = null;
+                    button7 = null;
+                    button8 = null;
+                    button9 = null;
+                    /*for (var i = 1; i < buttons.length; i++){
+                      buttons[i] = null;
+                    }*/
+                }//end reset
+            </script>
+    </body>
+</html>
